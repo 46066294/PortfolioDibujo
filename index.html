@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MCdesign</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <!-- <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:100%"> -->
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+	
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100" height="100" viewBox="0 0 2000 2000" x="0" y="0" shape-rendering="crispEdges"><defs></defs><rect x="0" y="0" width="2000" height="2000" fill="#ffffff"></rect><rect x="743" y="173" width="57" height="57" fill="#000000"></rect><rect x="857" y="173" width="57" height="57" fill="#000000"></rect><rect x="1028" y="173" width="57" height="57" fill="#000000"></rect><rect x="1199" y="173" width="57" height="57" fill="#000000"></rect><rect x="629" y="230" width="57" height="57" fill="#000000"></rect><rect x="743" y="230" width="57" height="57" fill="#000000"></rect><rect x="914" y="230" width="57" height="57" fill="#000000"></rect><rect x="1085" y="230" width="57" height="57" fill="#000000"></rect><rect x="1142" y="230" width="57" height="57" fill="#000000"></rect><rect x="1313" y="230" width="57" height="57" fill="#000000"></rect><rect x="857" y="287" width="57" height="57" fill="#000000"></rect><rect x="914" y="287" width="57" height="57" fill="#000000"></rect><rect x="1085" y="287" width="57" height="57" fill="#000000"></rect><rect x="1199" y="287" width="57" height="57" fill="#000000"></rect><rect x="1256" y="287" width="57" height="57" fill="#000000"></rect><rect x="1313" y="287" width="57" height="57" fill="#000000"></rect><rect x="629" y="344" width="57" height="57" fill="#000000"></rect><rect x="686" y="344" width="57" height="57" fill="#000000"></rect><rect x="743" y="344" width="57" height="57" fill="#000000"></rect><rect x="857" y="344" width="57" height="57" fill="#000000"></rect><rect x="914" y="344" width="57" height="57" fill="#000000"></rect><rect x="971" y="344" width="57" height="57" fill="#000000"></rect><rect x="1028" y="344" width="57" height="57" fill="#000000"></rect><rect x="1085" y="344" width="57" height="57" fill="#000000"></rect><rect x="1199" y="344" width="57" height="57" fill="#000000"></rect><rect x="1313" y="344" width="57" height="57" fill="#000000"></rect><rect x="686" y="401" width="57" height="57" fill="#000000"></rect><rect x="1028" y="401" width="57" height="57" fill="#000000"></rect><rect x="1085" y="401" width="57" height="57" fill="#000000"></rect><rect x="1256" y="401" width="57" height="57" fill="#000000"></rect><rect x="629" y="458" width="57" height="57" fill="#000000"></rect><rect x="686" y="458" width="57" height="57" fill="#000000"></rect><rect x="800" y="458" width="57" height="57" fill="#000000"></rect><rect x="857" y="458" width="57" height="57" fill="#000000"></rect><rect x="914" y="458" width="57" height="57" fill="#000000"></rect><rect x="971" y="458" width="57" height="57" fill="#000000"></rect><rect x="1028" y="458" width="57" height="57" fill="#000000"></rect><rect x="1142" y="458" width="57" height="57" fill="#000000"></rect><rect x="1313" y="458" width="57" height="57" fill="#000000"></rect><rect x="629" y="515" width="57" height="57" fill="#000000"></rect><rect x="743" y="515" width="57" height="57" fill="#000000"></rect><rect x="857" y="515" width="57" height="57" fill="#000000"></rect><rect x="971" y="515" width="57" height="57" fill="#000000"></rect><rect x="1085" y="515" width="57" height="57" fill="#000000"></rect><rect x="1199" y="515" width="57" height="57" fill="#000000"></rect><rect x="1313" y="515" width="57" height="57" fill="#000000"></rect><rect x="686" y="572" width="57" height="57" fill="#000000"></rect><rect x="743" y="572" width="57" height="57" fill="#000000"></rect><rect x="800" y="572" width="57" height="57" fill="#000000"></rect><rect x="914" y="572" width="57" height="57" fill="#000000"></rect><rect x="1085" y="572" width="57" height="57" fill="#000000"></rect><rect x="1199" y="572" width="57" height="57" fill="#000000"></rect><rect x="1256" y="572" width="57" height="57" fill="#000000"></rect><rect x="1313" y="572" width="57" height="57" fill="#000000"></rect><rect x="173" y="629" width="57" height="57" fill="#000000"></rect><rect x="230" y="629" width="57" height="57" fill="#000000"></rect><rect x="287" y="629" width="57" height="57" fill="#000000"></rect><rect x="344" y="629" width="57" height="57" fill="#000000"></rect><rect x="401" y="629" width="57" height="57" fill="#000000"></rect><rect x="515" y="629" width="57" height="57" fill="#000000"></rect><rect x="572" y="629" width="57" height="57" fill="#000000"></rect><rect x="629" y="629" width="57" height="57" fill="#000000"></rect><rect x="686" y="629" width="57" height="57" fill="#000000"></rect><rect x="800" y="629" width="57" height="57" fill="#000000"></rect><rect x="1028" y="629" width="57" height="57" fill="#000000"></rect><rect x="1142" y="629" width="57" height="57" fill="#000000"></rect><rect x="1199" y="629" width="57" height="57" fill="#000000"></rect><rect x="1313" y="629" width="57" height="57" fill="#000000"></rect><rect x="1370" y="629" width="57" height="57" fill="#000000"></rect><rect x="1484" y="629" width="57" height="57" fill="#000000"></rect><rect x="1598" y="629" width="57" height="57" fill="#000000"></rect><rect x="1712" y="629" width="57" height="57" fill="#000000"></rect><rect x="173" y="686" width="57" height="57" fill="#000000"></rect><rect x="287" y="686" width="57" height="57" fill="#000000"></rect><rect x="458" y="686" width="57" height="57" fill="#000000"></rect><rect x="629" y="686" width="57" height="57" fill="#000000"></rect><rect x="743" y="686" width="57" height="57" fill="#000000"></rect><rect x="857" y="686" width="57" height="57" fill="#000000"></rect><rect x="1028" y="686" width="57" height="57" fill="#000000"></rect><rect x="1085" y="686" width="57" height="57" fill="#000000"></rect><rect x="1256" y="686" width="57" height="57" fill="#000000"></rect><rect x="1370" y="686" width="57" height="57" fill="#000000"></rect><rect x="1484" y="686" width="57" height="57" fill="#000000"></rect><rect x="1541" y="686" width="57" height="57" fill="#000000"></rect><rect x="1598" y="686" width="57" height="57" fill="#000000"></rect><rect x="1712" y="686" width="57" height="57" fill="#000000"></rect><rect x="230" y="743" width="57" height="57" fill="#000000"></rect><rect x="287" y="743" width="57" height="57" fill="#000000"></rect><rect x="344" y="743" width="57" height="57" fill="#000000"></rect><rect x="401" y="743" width="57" height="57" fill="#000000"></rect><rect x="458" y="743" width="57" height="57" fill="#000000"></rect><rect x="515" y="743" width="57" height="57" fill="#000000"></rect><rect x="743" y="743" width="57" height="57" fill="#000000"></rect><rect x="914" y="743" width="57" height="57" fill="#000000"></rect><rect x="971" y="743" width="57" height="57" fill="#000000"></rect><rect x="1028" y="743" width="57" height="57" fill="#000000"></rect><rect x="1142" y="743" width="57" height="57" fill="#000000"></rect><rect x="1313" y="743" width="57" height="57" fill="#000000"></rect><rect x="1598" y="743" width="57" height="57" fill="#000000"></rect><rect x="1655" y="743" width="57" height="57" fill="#000000"></rect><rect x="230" y="800" width="57" height="57" fill="#000000"></rect><rect x="287" y="800" width="57" height="57" fill="#000000"></rect><rect x="401" y="800" width="57" height="57" fill="#000000"></rect><rect x="458" y="800" width="57" height="57" fill="#000000"></rect><rect x="629" y="800" width="57" height="57" fill="#000000"></rect><rect x="857" y="800" width="57" height="57" fill="#000000"></rect><rect x="971" y="800" width="57" height="57" fill="#000000"></rect><rect x="1085" y="800" width="57" height="57" fill="#000000"></rect><rect x="1199" y="800" width="57" height="57" fill="#000000"></rect><rect x="1256" y="800" width="57" height="57" fill="#000000"></rect><rect x="1370" y="800" width="57" height="57" fill="#000000"></rect><rect x="1427" y="800" width="57" height="57" fill="#000000"></rect><rect x="1484" y="800" width="57" height="57" fill="#000000"></rect><rect x="1541" y="800" width="57" height="57" fill="#000000"></rect><rect x="1598" y="800" width="57" height="57" fill="#000000"></rect><rect x="1769" y="800" width="57" height="57" fill="#000000"></rect><rect x="230" y="857" width="57" height="57" fill="#000000"></rect><rect x="287" y="857" width="57" height="57" fill="#000000"></rect><rect x="344" y="857" width="57" height="57" fill="#000000"></rect><rect x="515" y="857" width="57" height="57" fill="#000000"></rect><rect x="686" y="857" width="57" height="57" fill="#000000"></rect><rect x="743" y="857" width="57" height="57" fill="#000000"></rect><rect x="857" y="857" width="57" height="57" fill="#000000"></rect><rect x="971" y="857" width="57" height="57" fill="#000000"></rect><rect x="1028" y="857" width="57" height="57" fill="#000000"></rect><rect x="1313" y="857" width="57" height="57" fill="#000000"></rect><rect x="1484" y="857" width="57" height="57" fill="#000000"></rect><rect x="173" y="914" width="57" height="57" fill="#000000"></rect><rect x="230" y="914" width="57" height="57" fill="#000000"></rect><rect x="287" y="914" width="57" height="57" fill="#000000"></rect><rect x="458" y="914" width="57" height="57" fill="#000000"></rect><rect x="629" y="914" width="57" height="57" fill="#000000"></rect><rect x="1085" y="914" width="57" height="57" fill="#000000"></rect><rect x="1256" y="914" width="57" height="57" fill="#000000"></rect><rect x="1313" y="914" width="57" height="57" fill="#000000"></rect><rect x="1541" y="914" width="57" height="57" fill="#000000"></rect><rect x="1598" y="914" width="57" height="57" fill="#000000"></rect><rect x="1712" y="914" width="57" height="57" fill="#000000"></rect><rect x="173" y="971" width="57" height="57" fill="#000000"></rect><rect x="515" y="971" width="57" height="57" fill="#000000"></rect><rect x="572" y="971" width="57" height="57" fill="#000000"></rect><rect x="800" y="971" width="57" height="57" fill="#000000"></rect><rect x="857" y="971" width="57" height="57" fill="#000000"></rect><rect x="914" y="971" width="57" height="57" fill="#000000"></rect><rect x="971" y="971" width="57" height="57" fill="#000000"></rect><rect x="1142" y="971" width="57" height="57" fill="#000000"></rect><rect x="1313" y="971" width="57" height="57" fill="#000000"></rect><rect x="1598" y="971" width="57" height="57" fill="#000000"></rect><rect x="1655" y="971" width="57" height="57" fill="#000000"></rect><rect x="1712" y="971" width="57" height="57" fill="#000000"></rect><rect x="1769" y="971" width="57" height="57" fill="#000000"></rect><rect x="344" y="1028" width="57" height="57" fill="#000000"></rect><rect x="401" y="1028" width="57" height="57" fill="#000000"></rect><rect x="629" y="1028" width="57" height="57" fill="#000000"></rect><rect x="686" y="1028" width="57" height="57" fill="#000000"></rect><rect x="743" y="1028" width="57" height="57" fill="#000000"></rect><rect x="800" y="1028" width="57" height="57" fill="#000000"></rect><rect x="914" y="1028" width="57" height="57" fill="#000000"></rect><rect x="1085" y="1028" width="57" height="57" fill="#000000"></rect><rect x="1256" y="1028" width="57" height="57" fill="#000000"></rect><rect x="1313" y="1028" width="57" height="57" fill="#000000"></rect><rect x="1427" y="1028" width="57" height="57" fill="#000000"></rect><rect x="1484" y="1028" width="57" height="57" fill="#000000"></rect><rect x="1541" y="1028" width="57" height="57" fill="#000000"></rect><rect x="1712" y="1028" width="57" height="57" fill="#000000"></rect><rect x="1769" y="1028" width="57" height="57" fill="#000000"></rect><rect x="287" y="1085" width="57" height="57" fill="#000000"></rect><rect x="458" y="1085" width="57" height="57" fill="#000000"></rect><rect x="515" y="1085" width="57" height="57" fill="#000000"></rect><rect x="629" y="1085" width="57" height="57" fill="#000000"></rect><rect x="686" y="1085" width="57" height="57" fill="#000000"></rect><rect x="743" y="1085" width="57" height="57" fill="#000000"></rect><rect x="800" y="1085" width="57" height="57" fill="#000000"></rect><rect x="971" y="1085" width="57" height="57" fill="#000000"></rect><rect x="1028" y="1085" width="57" height="57" fill="#000000"></rect><rect x="1085" y="1085" width="57" height="57" fill="#000000"></rect><rect x="1142" y="1085" width="57" height="57" fill="#000000"></rect><rect x="1199" y="1085" width="57" height="57" fill="#000000"></rect><rect x="1370" y="1085" width="57" height="57" fill="#000000"></rect><rect x="1484" y="1085" width="57" height="57" fill="#000000"></rect><rect x="1541" y="1085" width="57" height="57" fill="#000000"></rect><rect x="173" y="1142" width="57" height="57" fill="#000000"></rect><rect x="230" y="1142" width="57" height="57" fill="#000000"></rect><rect x="287" y="1142" width="57" height="57" fill="#000000"></rect><rect x="401" y="1142" width="57" height="57" fill="#000000"></rect><rect x="743" y="1142" width="57" height="57" fill="#000000"></rect><rect x="857" y="1142" width="57" height="57" fill="#000000"></rect><rect x="971" y="1142" width="57" height="57" fill="#000000"></rect><rect x="1028" y="1142" width="57" height="57" fill="#000000"></rect><rect x="1256" y="1142" width="57" height="57" fill="#000000"></rect><rect x="1313" y="1142" width="57" height="57" fill="#000000"></rect><rect x="1427" y="1142" width="57" height="57" fill="#000000"></rect><rect x="1484" y="1142" width="57" height="57" fill="#000000"></rect><rect x="1598" y="1142" width="57" height="57" fill="#000000"></rect><rect x="1712" y="1142" width="57" height="57" fill="#000000"></rect><rect x="173" y="1199" width="57" height="57" fill="#000000"></rect><rect x="344" y="1199" width="57" height="57" fill="#000000"></rect><rect x="401" y="1199" width="57" height="57" fill="#000000"></rect><rect x="458" y="1199" width="57" height="57" fill="#000000"></rect><rect x="515" y="1199" width="57" height="57" fill="#000000"></rect><rect x="572" y="1199" width="57" height="57" fill="#000000"></rect><rect x="629" y="1199" width="57" height="57" fill="#000000"></rect><rect x="686" y="1199" width="57" height="57" fill="#000000"></rect><rect x="743" y="1199" width="57" height="57" fill="#000000"></rect><rect x="914" y="1199" width="57" height="57" fill="#000000"></rect><rect x="971" y="1199" width="57" height="57" fill="#000000"></rect><rect x="1142" y="1199" width="57" height="57" fill="#000000"></rect><rect x="1199" y="1199" width="57" height="57" fill="#000000"></rect><rect x="1256" y="1199" width="57" height="57" fill="#000000"></rect><rect x="1598" y="1199" width="57" height="57" fill="#000000"></rect><rect x="1655" y="1199" width="57" height="57" fill="#000000"></rect><rect x="1712" y="1199" width="57" height="57" fill="#000000"></rect><rect x="1769" y="1199" width="57" height="57" fill="#000000"></rect><rect x="173" y="1256" width="57" height="57" fill="#000000"></rect><rect x="287" y="1256" width="57" height="57" fill="#000000"></rect><rect x="344" y="1256" width="57" height="57" fill="#000000"></rect><rect x="401" y="1256" width="57" height="57" fill="#000000"></rect><rect x="572" y="1256" width="57" height="57" fill="#000000"></rect><rect x="857" y="1256" width="57" height="57" fill="#000000"></rect><rect x="914" y="1256" width="57" height="57" fill="#000000"></rect><rect x="1085" y="1256" width="57" height="57" fill="#000000"></rect><rect x="1142" y="1256" width="57" height="57" fill="#000000"></rect><rect x="1199" y="1256" width="57" height="57" fill="#000000"></rect><rect x="1256" y="1256" width="57" height="57" fill="#000000"></rect><rect x="1370" y="1256" width="57" height="57" fill="#000000"></rect><rect x="1427" y="1256" width="57" height="57" fill="#000000"></rect><rect x="1484" y="1256" width="57" height="57" fill="#000000"></rect><rect x="1541" y="1256" width="57" height="57" fill="#000000"></rect><rect x="1712" y="1256" width="57" height="57" fill="#000000"></rect><rect x="1769" y="1256" width="57" height="57" fill="#000000"></rect><rect x="173" y="1313" width="57" height="57" fill="#000000"></rect><rect x="287" y="1313" width="57" height="57" fill="#000000"></rect><rect x="344" y="1313" width="57" height="57" fill="#000000"></rect><rect x="401" y="1313" width="57" height="57" fill="#000000"></rect><rect x="515" y="1313" width="57" height="57" fill="#000000"></rect><rect x="572" y="1313" width="57" height="57" fill="#000000"></rect><rect x="686" y="1313" width="57" height="57" fill="#000000"></rect><rect x="743" y="1313" width="57" height="57" fill="#000000"></rect><rect x="857" y="1313" width="57" height="57" fill="#000000"></rect><rect x="971" y="1313" width="57" height="57" fill="#000000"></rect><rect x="1028" y="1313" width="57" height="57" fill="#000000"></rect><rect x="1085" y="1313" width="57" height="57" fill="#000000"></rect><rect x="1142" y="1313" width="57" height="57" fill="#000000"></rect><rect x="1313" y="1313" width="57" height="57" fill="#000000"></rect><rect x="1370" y="1313" width="57" height="57" fill="#000000"></rect><rect x="1427" y="1313" width="57" height="57" fill="#000000"></rect><rect x="1484" y="1313" width="57" height="57" fill="#000000"></rect><rect x="1541" y="1313" width="57" height="57" fill="#000000"></rect><rect x="1598" y="1313" width="57" height="57" fill="#000000"></rect><rect x="1655" y="1313" width="57" height="57" fill="#000000"></rect><rect x="1712" y="1313" width="57" height="57" fill="#000000"></rect><rect x="629" y="1370" width="57" height="57" fill="#000000"></rect><rect x="686" y="1370" width="57" height="57" fill="#000000"></rect><rect x="1085" y="1370" width="57" height="57" fill="#000000"></rect><rect x="1199" y="1370" width="57" height="57" fill="#000000"></rect><rect x="1313" y="1370" width="57" height="57" fill="#000000"></rect><rect x="1541" y="1370" width="57" height="57" fill="#000000"></rect><rect x="1712" y="1370" width="57" height="57" fill="#000000"></rect><rect x="629" y="1427" width="57" height="57" fill="#000000"></rect><rect x="686" y="1427" width="57" height="57" fill="#000000"></rect><rect x="743" y="1427" width="57" height="57" fill="#000000"></rect><rect x="800" y="1427" width="57" height="57" fill="#000000"></rect><rect x="857" y="1427" width="57" height="57" fill="#000000"></rect><rect x="1142" y="1427" width="57" height="57" fill="#000000"></rect><rect x="1256" y="1427" width="57" height="57" fill="#000000"></rect><rect x="1313" y="1427" width="57" height="57" fill="#000000"></rect><rect x="1427" y="1427" width="57" height="57" fill="#000000"></rect><rect x="1541" y="1427" width="57" height="57" fill="#000000"></rect><rect x="1598" y="1427" width="57" height="57" fill="#000000"></rect><rect x="1655" y="1427" width="57" height="57" fill="#000000"></rect><rect x="800" y="1484" width="57" height="57" fill="#000000"></rect><rect x="1199" y="1484" width="57" height="57" fill="#000000"></rect><rect x="1256" y="1484" width="57" height="57" fill="#000000"></rect><rect x="1313" y="1484" width="57" height="57" fill="#000000"></rect><rect x="1541" y="1484" width="57" height="57" fill="#000000"></rect><rect x="1655" y="1484" width="57" height="57" fill="#000000"></rect><rect x="1712" y="1484" width="57" height="57" fill="#000000"></rect><rect x="1769" y="1484" width="57" height="57" fill="#000000"></rect><rect x="629" y="1541" width="57" height="57" fill="#000000"></rect><rect x="800" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1028" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1085" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1142" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1199" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1256" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1313" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1370" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1427" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1484" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1541" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1655" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1712" y="1541" width="57" height="57" fill="#000000"></rect><rect x="1769" y="1541" width="57" height="57" fill="#000000"></rect><rect x="629" y="1598" width="57" height="57" fill="#000000"></rect><rect x="686" y="1598" width="57" height="57" fill="#000000"></rect><rect x="857" y="1598" width="57" height="57" fill="#000000"></rect><rect x="914" y="1598" width="57" height="57" fill="#000000"></rect><rect x="1028" y="1598" width="57" height="57" fill="#000000"></rect><rect x="1085" y="1598" width="57" height="57" fill="#000000"></rect><rect x="1313" y="1598" width="57" height="57" fill="#000000"></rect><rect x="1370" y="1598" width="57" height="57" fill="#000000"></rect><rect x="1427" y="1598" width="57" height="57" fill="#000000"></rect><rect x="1484" y="1598" width="57" height="57" fill="#000000"></rect><rect x="629" y="1655" width="57" height="57" fill="#000000"></rect><rect x="686" y="1655" width="57" height="57" fill="#000000"></rect><rect x="743" y="1655" width="57" height="57" fill="#000000"></rect><rect x="914" y="1655" width="57" height="57" fill="#000000"></rect><rect x="971" y="1655" width="57" height="57" fill="#000000"></rect><rect x="1142" y="1655" width="57" height="57" fill="#000000"></rect><rect x="1256" y="1655" width="57" height="57" fill="#000000"></rect><rect x="1484" y="1655" width="57" height="57" fill="#000000"></rect><rect x="1655" y="1655" width="57" height="57" fill="#000000"></rect><rect x="1712" y="1655" width="57" height="57" fill="#000000"></rect><rect x="629" y="1712" width="57" height="57" fill="#000000"></rect><rect x="686" y="1712" width="57" height="57" fill="#000000"></rect><rect x="857" y="1712" width="57" height="57" fill="#000000"></rect><rect x="914" y="1712" width="57" height="57" fill="#000000"></rect><rect x="1085" y="1712" width="57" height="57" fill="#000000"></rect><rect x="1142" y="1712" width="57" height="57" fill="#000000"></rect><rect x="1199" y="1712" width="57" height="57" fill="#000000"></rect><rect x="1256" y="1712" width="57" height="57" fill="#000000"></rect><rect x="1313" y="1712" width="57" height="57" fill="#000000"></rect><rect x="1598" y="1712" width="57" height="57" fill="#000000"></rect><rect x="1655" y="1712" width="57" height="57" fill="#000000"></rect><rect x="1769" y="1712" width="57" height="57" fill="#000000"></rect><rect x="629" y="1769" width="57" height="57" fill="#000000"></rect><rect x="743" y="1769" width="57" height="57" fill="#000000"></rect><rect x="857" y="1769" width="57" height="57" fill="#000000"></rect><rect x="971" y="1769" width="57" height="57" fill="#000000"></rect><rect x="1028" y="1769" width="57" height="57" fill="#000000"></rect><rect x="1085" y="1769" width="57" height="57" fill="#000000"></rect><rect x="1142" y="1769" width="57" height="57" fill="#000000"></rect><rect x="1256" y="1769" width="57" height="57" fill="#000000"></rect><rect x="1370" y="1769" width="57" height="57" fill="#000000"></rect><rect x="1427" y="1769" width="57" height="57" fill="#000000"></rect><rect x="1541" y="1769" width="57" height="57" fill="#000000"></rect><rect x="1598" y="1769" width="57" height="57" fill="#000000"></rect><rect x="1655" y="1769" width="57" height="57" fill="#000000"></rect><svg version="1.1" id="Ebene_1" x="173" y="173" width="399" height="399" viewBox="0 0 699.988 699.986" enable-background="new 0 0 699.988 699.986" xml:space="preserve" shape-rendering="auto">
+            <path fill="#000000" d="M600.99,0h-100h-99.997h-0.001h-99.997h-99.998h-99.998H1v99.998v99.998v99.998v99.999v99.997v99.998v99.998  h99.999h99.998h99.998h99.997h0.001h99.997h100h99.998v-99.998V499.99v-99.997v-99.999v-99.998V99.998V0H600.99z M600.99,199.996  v99.998v99.999v99.997v99.998h-100h-99.997h-0.001h-99.997h-99.998h-99.998V499.99v-99.997v-99.999v-99.998V99.998h99.998h99.998  h99.997h0.001h99.997h100V199.996z"></path>
+            </svg>
+            <svg version="1.0" id="Ebene_1" x="173" y="173" width="399" height="399" viewBox="0 0 699.988 699.988" enable-background="new 0 0 699.988 699.988" xml:space="preserve" shape-rendering="auto">
+            <polygon fill="#000000" points="399.994,199.997 399.992,199.997 299.996,199.997 199.998,199.997 199.998,299.994 199.998,399.994   199.998,499.991 299.996,499.991 399.992,499.991 399.994,499.991 499.99,499.991 499.99,399.994 499.99,299.994 499.99,199.997 "></polygon>
+            </svg>
+            <svg version="1.1" id="Ebene_1" x="1427" y="173" width="399" height="399" viewBox="0 0 699.988 699.986" enable-background="new 0 0 699.988 699.986" xml:space="preserve" shape-rendering="auto">
+            <path fill="#000000" d="M600.99,0h-100h-99.997h-0.001h-99.997h-99.998h-99.998H1v99.998v99.998v99.998v99.999v99.997v99.998v99.998  h99.999h99.998h99.998h99.997h0.001h99.997h100h99.998v-99.998V499.99v-99.997v-99.999v-99.998V99.998V0H600.99z M600.99,199.996  v99.998v99.999v99.997v99.998h-100h-99.997h-0.001h-99.997h-99.998h-99.998V499.99v-99.997v-99.999v-99.998V99.998h99.998h99.998  h99.997h0.001h99.997h100V199.996z"></path>
+            </svg>
+            <svg version="1.0" id="Ebene_1" x="1427" y="173" width="399" height="399" viewBox="0 0 699.988 699.988" enable-background="new 0 0 699.988 699.988" xml:space="preserve" shape-rendering="auto">
+            <polygon fill="#000000" points="399.994,199.997 399.992,199.997 299.996,199.997 199.998,199.997 199.998,299.994 199.998,399.994   199.998,499.991 299.996,499.991 399.992,499.991 399.994,499.991 499.99,499.991 499.99,399.994 499.99,299.994 499.99,199.997 "></polygon>
+            </svg>
+            <svg version="1.1" id="Ebene_1" x="173" y="1427" width="399" height="399" viewBox="0 0 699.988 699.986" enable-background="new 0 0 699.988 699.986" xml:space="preserve" shape-rendering="auto">
+            <path fill="#000000" d="M600.99,0h-100h-99.997h-0.001h-99.997h-99.998h-99.998H1v99.998v99.998v99.998v99.999v99.997v99.998v99.998  h99.999h99.998h99.998h99.997h0.001h99.997h100h99.998v-99.998V499.99v-99.997v-99.999v-99.998V99.998V0H600.99z M600.99,199.996  v99.998v99.999v99.997v99.998h-100h-99.997h-0.001h-99.997h-99.998h-99.998V499.99v-99.997v-99.999v-99.998V99.998h99.998h99.998  h99.997h0.001h99.997h100V199.996z"></path>
+            </svg>
+            <svg version="1.0" id="Ebene_1" x="173" y="1427" width="399" height="399" viewBox="0 0 699.988 699.988" enable-background="new 0 0 699.988 699.988" xml:space="preserve" shape-rendering="auto">
+            <polygon fill="#000000" points="399.994,199.997 399.992,199.997 299.996,199.997 199.998,199.997 199.998,299.994 199.998,399.994   199.998,499.991 299.996,499.991 399.992,499.991 399.994,499.991 499.99,499.991 499.99,399.994 499.99,299.994 499.99,199.997 "></polygon>
+            </svg>
+            </svg>
+            
+            </svg>
+
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p class="tradHome">HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p class="tradAbout">ABOUT</p>
+        </a>
+        <a href="#drawings" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p class="tradDrawings">DRAWINGS</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p class="tradContact">CONTACT</p>
+        </a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black traducir">
+            <i class="fa fa-commenting" style="font-size:36px"></i>
+            <p class="tradLeng">CASTELLANO</p>
+        </a>
+
+    </nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#" class="w3-bar-item w3-button tradHome" style="width:20% !important">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button tradAbout" style="width:20% !important">ABOUT</a>
+        <a href="#drawings" class="w3-bar-item w3-button tradDrawings" style="width:20% !important">DRAWINGS</a>
+        <a href="#contact" class="w3-bar-item w3-button tradContact" style="width:20% !important">CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button tradLeng traducir" style="width:20% !important">CASTELLANO</a>
+    </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">MCdesign</h1>
+    <p class="tradBy">by Marc Cano</p>
+    <img src="./drawings/portada.jpg" alt="demon" class="w3-image" height="992" width="1108">
+    <!-- <img src="./drawings/portada.jpg" alt="demon" class="w3-image" width="60%"> -->
+    
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="drawings">
+    <h2 class="w3-text-light-grey tradDrawings">My Drawings</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for drawings -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img id="daemon"     src="./drawings/daemon.jpg"     alt="daemon"       style="width:100%;" class="drawing negro">
+        <img id="tomb"       src="./drawings/tomb.jpg"       alt="tomb"         style="width:100%;" class="drawing tinta">
+        <img id="sad"        src="./drawings/sad.jpg"        alt="sad"          style="width:100%;" class="drawing negro">
+        <img id="bat"        src="./drawings/bat.jpg"        alt="bat"          style="width:100%;" class="drawing tinta">
+        <img id="owl"          src="./drawings/owl.jpg"          alt="owl"          style="width:100%;" class="drawing boli">
+        <img id="tower"      src="./drawings/tower.jpg"      alt="tower"        style="width:100%;" class="drawing tinta rotu">
+        <img id="armored-mecha-snail"  src="./drawings/armored-mecha-snail.jpg"  alt="armored-mecha-snail" style="width:100%;" class="drawing grafito">
+        <img id="mononoke"   src="./drawings/mononoke.jpg"   alt="mononoke"     style="width:100%;" class="drawing tinta">
+        <img id="raven"        src="./drawings/raven.jpg"        alt="raven"        style="width:100%;" class="drawing negro">
+        <!-- <img id="anubis"     src="./drawings/anubis.jpg"     alt="anubis"       style="width:100%;" class="drawing negro"> -->
+        <!-- <img id="kid"        src="./drawings/kid.jpg"        alt="kid"          style="width:100%;" class="drawing tinta"> -->
+        <!-- <img id="street"     src="./drawings/street.jpg"     alt="street"       style="width:100%;" class="drawing boli"> -->
+        <!-- <img id="kubin-down" src="./drawings/kubin-down.jpg" alt="kubin-down"   style="width:100%;" class="drawing negro"> -->
+        <!-- <img id="batman"     src="./drawings/batman.jpg"     alt="batman"       style="width:100%;" class="drawing negro"> -->
+        <!-- <img id="sphere"     src="./drawings/sphere.jpg"     alt="sphere"       style="width:100%;" class="drawing grafito"> -->
+      </div>
+
+      <div class="w3-half">
+        <img id="child"        src="./drawings/child.jpg"        alt="child"        style="width:100%;" class="drawing negro">
+        <img id="trazo-libre"  src="./drawings/trazo-libre.jpg"  alt="trazo-libre"  style="width:100%;" class="drawing boli">
+        <img id="knight"       src="./drawings/knight.jpg"       alt="knight"       style="width:100%;" class="drawing boli">
+        <img id="noire"        src="./drawings/noire.jpg"        alt="noire"        style="width:100%;" class="drawing negro">
+        <img id="urban-light"  src="./drawings/urban-light.jpg"  alt="urban-light"  style="width:100%;" class="drawing tinta">
+        <img id="nun"          src="./drawings/nun.jpg"          alt="nun"          style="width:100%;" class="drawing negro">
+        <img id="cat"          src="./drawings/cat.jpg"          alt="cat"          style="width:100%;" class="drawing negro">
+        <img id="skull"        src="./drawings/skull.jpg"        alt="skull"        style="width:100%;" class="drawing grafito">
+        <img id="woman-face"   src="./drawings/woman-face.jpg"   alt="woman-face"   style="width:100%;" class="drawing negro">
+        <!-- <img id="black-owl"  src="./drawings/black-owl.jpg"  alt="black-owl"    style="width:100%;" class="drawing negro"> -->
+        <!-- <img id="castle"       src="./drawings/castle.jpg"       alt="castle"       style="width:100%;" class="drawing grafito"> -->
+        <!-- <img id="vhs-design"   src="./drawings/vhs-design.jpg"   alt="vhs-design"   style="width:100%;" class="drawing grafito"> -->
+        <!-- <img id="free_designs" src="./drawings/free_designs.jpg" alt="free_designs" style="width:100%;" class="drawing boli"> -->
+      </div>
+    <!-- End photo grid -->
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey tradDescription">Descripción</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="tradText">Soy un apasionado del diseño y la ilustración, con una especial dedicación al dibujo como medio para expresar creatividad. A lo largo de mi trayectoria, he explorado diversas formas de arte visual, desarrollando un estilo que combina la técnica y la innovación. Además, mi experiencia se extiende al campo de la programación web y el diseño industrial, lo que me ha permitido integrar tecnología y funcionalidad en mis proyectos. Busco siempre nuevos retos que me permitan crecer tanto en el ámbito artístico como en el técnico, fusionando estética y propósito en cada creación.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey tradSkills">Habilidades</h3>
+    <p class="w3-wide tradIndDesign">Diseño industrial</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide tradWebDesign">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide tradDrawing">Drawing</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide tradMusic">Music</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey tradReputation">My Reputation</h3>  
+    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>John Doe saved us from a web disaster.</p><br>
+    
+    <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than John Doe.</p>
+  <!-- End About Section -->
+  </div>
+  
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey tradContactMe">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <strong class="tradPlace">Place:</strong> Barcelona , ES</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <strong class="tradPhone">Phone:</strong> +34 610622321</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <strong class="tradMail">Email:</strong> mateiver@hotmail.com</p>
+    </div><br>
+
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+    // TYPOGRAFIA
+    let typografia="Orbitron";
+
+    // Crear el elemento <style>
+    let style = document.createElement("style");
+
+    // Definir el contenido del estilo
+    let css = `
+        body, h1,h2,h3,h4,h5,h6 {font-family: "${typografia}", sans-serif}
+        .w3-row-padding img {margin-bottom: 12px}
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {width: 120px;background: #222;}
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    `;
+
+    // Insertar el CSS dentro del <style>
+    style.appendChild(document.createTextNode(css));
+
+    // Añadir el elemento <style> al <head> del documento
+    document.head.appendChild(style);
+
+    // Crear el elemento <link>
+    let link = document.createElement("link");
+
+    // Configurar los atributos del <link>
+    link.rel = "stylesheet";
+    link.href = `https://fonts.googleapis.com/css2?family=${typografia}:wght@400;700&display=swap`; // URL de la tipografía
+
+    // Insertar el <link> en el <head>
+    document.head.appendChild(link);
+
+
+    // ENLARGE IMG
+
+    // Definir el contenido del estilo en una variable
+    let cssCont = `
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .drawing {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .drawing:hover {
+            opacity: 0.7;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 60%;
+        }
+
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content, #caption {  
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {-webkit-transform:scale(0)} 
+            to {-webkit-transform:scale(1)}
+        }
+
+        @keyframes zoom {
+            from {transform:scale(0)} 
+            to {transform:scale(1)}
+        }
+
+
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+    `;
+
+    // Insertar el CSS dentro del <style>
+    style.appendChild(document.createTextNode(cssCont));
+
+    // Añadir el elemento <style> al <head> del documento
+    document.head.appendChild(style);
+
+
+
+
+
+    // JS
+    // Get elements
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("modalImg");
+    var captionText = document.getElementById("caption");
+
+
+    // close the modal
+    modal.onclick = function() { 
+        modal.style.display = "none";
+    }
+
+
+    // Selecciona todas las imágenes con la clase 'drawing'
+    const images = document.querySelectorAll('img.drawing');
+
+    // Recorre todas las imágenes y añade un event listener a cada una
+    images.forEach(function(img) {
+        img.addEventListener('click', function() {
+            let portrait = isPortrait(img); // portrait = formato vertical
+            if(portrait){
+                document.querySelector('.modal-content').style.width = '30%';
+            } else {
+                document.querySelector('.modal-content').style.width = '60%';
+            }
+            enlarge(img);
+        });
+    });
+
+
+
+    function enlarge(img) {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+    }
+
+    function isPortrait(img) {
+        return img.width < img.height;
+    }
+
+
+
+    // TRADUCCION / IDIOMA
+    const cast = 
+    {
+        "tradHome": "INICIO", 
+        "tradAbout": "SOBRE MI", 
+        "tradDrawings": "DIBUJOS", 
+        "tradContact": "CONTACTO", 
+        "tradLeng": "CASTELLANO", 
+        "tradBy":"por Marc Cano", 
+        "tradDescription": "Descripción", 
+        "tradText": "Soy un apasionado del diseño y la ilustración, con una especial dedicación al dibujo como medio para expresar creatividad. A lo largo de mi trayectoria, he explorado diversas formas de arte visual, desarrollando un estilo que combina la técnica y la innovación. Además, mi experiencia se extiende al campo de la programación web y el diseño industrial, lo que me ha permitido integrar tecnología y funcionalidad en mis proyectos. Busco siempre nuevos retos que me permitan crecer tanto en el ámbito artístico como en el técnico, fusionando estética y propósito en cada creación.", 
+        "tradSkills": "Habilidades", 
+        "tradIndDesign": "Diseño industrial", 
+        "tradWebDesign": "Diseño web", 
+        "tradDrawing": "Dibujo", 
+        "tradMusic": "Música", 
+        "tradReputation": "Reputación", 
+        "tradContactMe": "Contácto", 
+        "tradPlace": "Lugar", 
+        "tradPhone": "Teléfono", 
+        "tradMail": "Correo", 
+    } 
+
+    const eng = 
+    {
+        "tradHome": "HOME", 
+        "tradAbout": "ABOUT ME", 
+        "tradDrawings": "DRAWINGS", 
+        "tradContact": "CONTACT", 
+        "tradLeng": "ENGLISH", 
+        "tradBy":"by Marc Cano", 
+        "tradDescription": "Description", 
+        "tradText": "I am passionate about design and illustration, with a special dedication to drawing as a means of expressing creativity. Throughout my career, I have explored various forms of visual art, developing a style that combines technique and innovation. In addition, my experience extends to the field of web programming and industrial design, which has allowed me to integrate technology and functionality in my projects. I am always looking for new challenges that allow me to grow both artistically and technically, merging aesthetics and purpose in each creation.", 
+        "tradSkills": "Skills", 
+        "tradIndDesign": "Industrial Design", 
+        "tradWebDesign": "Web Design", 
+        "tradDrawing": "Drawing", 
+        "tradMusic": "Music", 
+        "tradReputation": "Reputation", 
+        "tradContactMe": "Contact Me", 
+        "tradPlace": "Place", 
+        "tradPhone": "Phone", 
+        "tradMail": "Email", 
+    } 
+
+    function traducir(tradJson){
+        const arrayTrad = Object.entries(tradJson);
+        for (let [trad, value] of arrayTrad) {
+            document.querySelectorAll(`.${trad}`).forEach((elem) => {
+                elem.innerHTML = value;
+            });
+        }
+    }
+
+    var idiomaCastellano = true;
+    window.onload = traducir(cast);
+    
+
+    // Selecciona todos los elementos con la clase traducir
+    let botonTraducir = document.querySelectorAll('.traducir');
+    // Recorre todas las imágenes y añade un event listener a cada una
+    botonTraducir.forEach( (elem) => {
+        elem.addEventListener('click', function() {
+            idiomaCastellano = !idiomaCastellano;
+            if(idiomaCastellano) traducir(cast);
+            else traducir(eng);
+        });
+    });
+
+   
+
+</script>
+
+
+</body>
+</html>
+
